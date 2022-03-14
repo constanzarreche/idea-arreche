@@ -85,7 +85,7 @@ a, a:hover, a:focus, a:active {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "nav" "contact" "footer";
+    grid-template-areas: "nav" "contact" "hours" "footer";
 }
 
 
@@ -590,12 +590,15 @@ footer {
 }
 
 /* ABOUT US */
+.about_us--container {
+    grid-area: us;
+}
+
 #about_us_spacing {
     margin-top: 125px;
 }
 
 .about_us {
-    grid-area: us;
     padding: 70px 30px;
 }
 .about_us > article {
@@ -801,6 +804,7 @@ footer {
 }
 
 .contact_map_hours {
+    grid-area: hours;
     margin-bottom: 70px;
     padding: 0px 30px;
     display: flex;
@@ -1167,5 +1171,64 @@ footer {
     /* HOME FAVORITES */ .section__favorites .section__favorites-products ul .section__favorites-products--item {
         max-width: 22%;
         margin-bottom: 0;
+    }
+}
+
+
+/* ANIMATIONS */
+.fadeIn{
+    animation: fadeIn 1s ease-in-out;
+}
+
+.fadeInUp{
+    animation:fadeInUp 1s ease backwards;
+}
+
+.fadeInRight{
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.fadeInLeft{
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+/*Keyframes*/
+@keyframes fadeIn{
+    0% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+}
+
+@keyframes fadeInUp{
+    0%{
+    transform:translate(0px, 100px); 
+    opacity: 0;
+    }
+    100%{
+    transform:translate(0px, 0); 
+    opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+    opacity: 0;
+    transform: translateX(300px);
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    transform: translateX(-300px);
+    }
+    100% {
+    opacity: 1;
     }
 }
