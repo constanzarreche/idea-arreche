@@ -6,39 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico">
     
-    <!-- Styles -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
 
     <title>Chillin´ - Eventos</title>
 </head>
+
 <body>
     
-    <div class="events__container">
-        <header>
-            <a href="../index.html" class="logo">
-                <img src="../assets/img/logo.png" alt="Logo Chillin" title="Chillin">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar__container px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../assets/img/logo.png" alt="Logo Chillin'" class="w-100">
             </a>
-            <nav class="menu">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="menu.html">Menú</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </div>
+    </nav>
     
-        <section class="section__events">
-            <article>
-                <h1 class="fadeIn">Chillin´eventos</h1>
-                <h2 class="fadeIn">De la mano de Chillin´ te traemos los próximos eventos donde podrás asistir y pasar un buen momento.</h2>
+    <!-- Eventos -->
+    <section class="main__events section__events">
+        <div class="container-fluid">
+            <h1 class="fadeIn text-center">Chillin´eventos</h1>
+            <h2 class="fadeIn text-center">De la mano de Chillin´ te traemos los próximos eventos donde podrás asistir y pasar un buen momento.</h2>
                 
-                <div class="section__events-event">
-                    <div class="section__events-event--image fadeInLeft">
+            <article class="row">
+                <div class="section__events-event row">
+                    <div class="section__events-event--image fadeInLeft col-lg-6">
                         <img src="../assets/img/events_4.jpg" alt="Imágen del evento">
                     </div>
-                    <div class="section__events-event--text fadeInRight">
+                    <div class="section__events-event--text fadeInRight col-lg-6">
                         <h4>Coffee Night</h4>
                         <h5>Vení a degustar lo mejor del café y conocer las sorpresas que tenemos para vos.</h5>
                         <p><b>Día y horario:</b> 10 de Marzo 2022 - 21:00hs</p>
@@ -46,12 +67,12 @@
                     </div>
                 </div> 
                 
-                <div class="section__events-event">
-                    <div class="section__events-event--image fadeInLeft">
+                <div class="section__events-event row">
+                    <div class="section__events-event--image fadeInLeft col-lg-6">
                         <img src="../assets/img/events_1.jpg" alt="Imágen del evento">
                     </div>
     
-                    <div class="section__events-event--text fadeInRight">
+                    <div class="section__events-event--text fadeInRight col-lg-6">
                         <h4>Beer & Friends</h4>
                         <h5>Noche de cerveza de gran variedad, en conjunto con las mejores hamburguesas para todos los gustos.</h5>
                         <p><b>Día y horario:</b> 4 de Abril 2022 - 21:30hs</p>
@@ -59,11 +80,11 @@
                     </div>
                 </div>
     
-                <div class="section__events-event">
-                    <div class="section__events-event--image fadeInLeft">
+                <div class="section__events-event row">
+                    <div class="section__events-event--image fadeInLeft col-lg-6">
                         <img src="../assets/img/events_2.jpg" alt="Imágen del evento">
                     </div>
-                    <div class="section__events-event--text fadeInRight">
+                    <div class="section__events-event--text fadeInRight col-lg-6">
                         <h4>Show Night</h4>
                         <h5>Junto a un espectáculo secreto que tenemos para vos, te ofrecemos platos de gran calidad, bebida de variedad y pasar un momento inolvidable</h5>
                         <p><b>Día y horario:</b> 9 de Mayo 2022 - 22:00hs</p>
@@ -71,11 +92,11 @@
                     </div>
                 </div>
     
-                <div class="section__events-event">
-                    <div class="section__events-event--image fadeInLeft">
+                <div class="section__events-event row">
+                    <div class="section__events-event--image fadeInLeft col-lg-6">
                         <img src="../assets/img/events_3.jpg" alt="Imágen del evento">
                     </div>
-                    <div class="section__events-event--text fadeInRight">
+                    <div class="section__events-event--text fadeInRight col-lg-6">
                         <h4>Wine & Dine</h4>
                         <h5>Te invitamos a probar los mejores vinos y platos gourmet que tenemos para vos.</h5>
                         <p><b>Día y horario:</b> 6 de Junio 2022 - 21:30hs</p>
@@ -83,36 +104,42 @@
                     </div>
                 </div>
             </article>
-        </section>
-    
-    
-    
-        <footer>
-    
-            <a href="../index.html" class="footer__logo">
-                <img src="../assets/img/logo_footer.png" alt="Logo Chillin" title="Chillin">
-            </a>
-    
-            <div class="footer__links">
-                <nav  class="footer__links-menu">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="menu.html">Menú</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="eventos.html">Eventos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+        </div>        
+    </section>
+
+    <!-- Footer -->  
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <a href="../index.html" class="col-lg-4 footer__logo">
+                    <img src="../assets/img/logo_footer.png" alt="Logo Chillin" title="Chillin">
+                </a>
+                <div class="col-lg-8 d-flex flex-wrap footer__links">
+                    <nav  class="col-12 col-lg-10 footer__links-menu">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="menu.html">Menú</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+        
+                    <ul class="col-12 col-lg-2 footer__links-social">
+                        <li><a href="https://instagram.com"><img src="../assets/img/instagram.svg" alt="Instagram de Chillin"></a></li>
+                        <li><a href="https://facebook.com"><img src="../assets/img/facebook.svg" alt="Facebook de Chillin"></a></li>
                     </ul>
-                </nav>
-    
-                <ul class="footer__links-social">
-                    <li><a href="https://instagram.com"><img src="../assets/img/instagram.svg" alt="Instagram de Chillin"></a></li>
-                    <li><a href="https://facebook.com"><img src="../assets/img/facebook.svg" alt="Facebook de Chillin"></a></li>
-                </ul>
-    
+        
+                </div>
             </div>
+        </div>
     
-        </footer>
-    </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

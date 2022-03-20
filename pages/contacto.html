@@ -6,34 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico">
     
-    <!-- Styles -->
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
 
     <title>Chillin´ - Contacto</title>
 </head>
+
 <body>
     
-    <div class="contact__container">
-        <header>
-            <a href="../index.html" class="logo">
-                <img src="../assets/img/logo.png" alt="Logo Chillin" title="Chillin">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar__container px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../assets/img/logo.png" alt="Logo Chillin'" class="w-100">
             </a>
-            <nav class="menu">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="menu.html">Menú</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </div>
+    </nav>
     
-        <section class="contact">
-            <article class="fadeIn">
-                <h1>Contáctanos</h1>
-                <h2>Estamos listos para responder a cualquier consulta, duda o comentario que tengas para nosotros.</h2>
-                
+    <!-- Formulario -->
+    <section class="contact">
+
+        <div class="container-fluid">
+            <h1 class="text-center">Contáctanos</h1>
+            <h2 class="text-center">Estamos listos para responder a cualquier consulta, duda o comentario que tengas para nosotros.</h2>
+            
+            <article class="fadeIn row">
                 <form action="#" method="POST">
                     <div>
                         <input type="text" placeholder="Nombre y Apellido" name="nombre">
@@ -76,43 +98,57 @@
                     
                 </form>
             </article>
-        </section>
+        </div>
+            
+    </section>
         
-        <section class="contact_map_hours">
-            <article class="fadeInLeft">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13153.51637086956!2d-58.5223314!3d-34.4932724!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2c0e5b136b20684!2sChillin!5e0!3m2!1ses!2sar!4v1644766938645!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </article>
-            <aside class="fadeInRight">
-                <img src="../assets/img/contact.jpg" alt="Imágen de horarios de apertura y cierre">
-            </aside>
-        </section>
-    
-        <footer>
-    
-            <a href="../index.html" class="footer__logo">
-                <img src="../assets/img/logo_footer.png" alt="Logo Chillin" title="Chillin">
-            </a>
-    
-            <div class="footer__links">
-                <nav  class="footer__links-menu">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="menu.html">Menú</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="eventos.html">Eventos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-    
-                <ul class="footer__links-social">
-                    <li><a href="https://instagram.com"><img src="../assets/img/instagram.svg" alt="Instagram de Chillin"></a></li>
-                    <li><a href="https://facebook.com"><img src="../assets/img/facebook.svg" alt="Facebook de Chillin"></a></li>
-                </ul>
-    
+    <!-- Mapa y horarios -->
+    <section class="contact_map_hours">
+        <div class="container-fluid">
+            <div class="row">
+                <article class="fadeInLeft col-xl-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13153.51637086956!2d-58.5223314!3d-34.4932724!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2c0e5b136b20684!2sChillin!5e0!3m2!1ses!2sar!4v1644766938645!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </article>
+                <aside class="fadeInRight col-xl-6">
+                    <img src="../assets/img/contact.jpg" alt="Imágen de horarios de apertura y cierre">
+                </aside>
             </div>
+        </div>
+    </section>
     
-        </footer>
-    </div>
+    <!-- Footer -->  
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <a href="../index.html" class="col-lg-4 footer__logo">
+                    <img src="../assets/img/logo_footer.png" alt="Logo Chillin" title="Chillin">
+                </a>
+                <div class="col-lg-8 d-flex flex-wrap footer__links">
+                    <nav  class="col-12 col-lg-10 footer__links-menu">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="menu.html">Menú</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+        
+                    <ul class="col-12 col-lg-2 footer__links-social">
+                        <li><a href="https://instagram.com"><img src="../assets/img/instagram.svg" alt="Instagram de Chillin"></a></li>
+                        <li><a href="https://facebook.com"><img src="../assets/img/facebook.svg" alt="Facebook de Chillin"></a></li>
+                    </ul>
+        
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
