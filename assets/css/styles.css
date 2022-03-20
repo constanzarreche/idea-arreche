@@ -1,5 +1,9 @@
 /* GLOBAL */
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -59,6 +63,9 @@ button:focus, button:active {
     top: 0;
     left: 0;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+div#navbarSupportedContent {
+    min-height: 100vh;
 }
 .navbar__container.navbar-light .navbar-toggler {
     border: none;
@@ -756,6 +763,13 @@ footer {
         color: #767676;
         font-size: 0.8em;
         font-weight: normal;
+    }
+}
+
+@media (min-width: 992px) {
+    /* MENÚ */
+    div#navbarSupportedContent {
+        min-height: initial;
     }
 }
 
