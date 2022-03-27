@@ -1,9 +1,0 @@
-@import url("_reset");
-@import url("_fonts");
-@import url("_global");
-@import url("_animations");
-@import url("_mixins");
-@import url("variables/_main");
-@import url("components/_navbar");
-@import url("components/_content");
-@import url("components/_footer");
