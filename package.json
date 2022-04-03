@@ -1,7 +1,7 @@
 {
   "name": "sass",
   "version": "1.0.0",
-  "description": "initial",
+  "description": "Chillin' Café es un local donde ofrecemos variedades de café, comidas y eventos para que disfrutes",
   "main": "index.js",
   "scripts": {
     "test": "test sass",

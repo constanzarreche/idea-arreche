@@ -163,22 +163,21 @@ button:focus, button:active {
     z-index: 1;
     left: 0;
     right: 0; }
-    .section__header .carousel-caption h1 {
+    .section__header .carousel-caption .carousel-title, .section__header .carousel-caption .carousel-subtitle {
       font-size: 2rem;
       text-transform: uppercase;
       font-weight: 900;
       color: #2a352e;
-      margin-bottom: 10px; }
+      margin-bottom: 15px; }
       @media (min-width: 1024px) {
-        .section__header .carousel-caption h1 {
+        .section__header .carousel-caption .carousel-title, .section__header .carousel-caption .carousel-subtitle {
           font-size: 2.9em; } }
-    .section__header .carousel-caption h2 {
+    .section__header .carousel-caption .carousel-subtitle {
       font-size: 1.1rem;
       font-weight: 400;
-      color: #2a352e;
-      margin-bottom: 20px; }
+      text-transform: initial; }
       @media (min-width: 1024px) {
-        .section__header .carousel-caption h2 {
+        .section__header .carousel-caption .carousel-subtitle {
           font-size: 1.3em; } }
     .section__header .carousel-caption a {
       background-color: #2a352e;
@@ -387,7 +386,7 @@ button:focus, button:active {
     padding: 12px 20px;
     color: #FFFFFF;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.85em;
     font-weight: 600;
     display: inline-block; }
     .section__contact a:hover, .section__contact a:focus, .section__contact a:active {

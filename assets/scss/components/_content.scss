@@ -77,23 +77,23 @@ button:focus, button:active {
         left: 0;
         right: 0;
 
-        h1 {
+        .carousel-title {
             font-size: 2rem;
             text-transform: uppercase;
             font-weight: 900;
-            color: $main-color;
-            margin-bottom: 10px;
+            color: map-get($map:$webColors,$key:'main-color');
+            margin-bottom: 15px;
 
             @include device-size(break-md){
                 font-size: 2.9em;
             }
         }
 
-        h2 {
+        .carousel-subtitle {
+            @extend .carousel-title;
             font-size: 1.1rem;
             font-weight: 400;
-            color: $main-color;
-            margin-bottom: 20px;
+            text-transform: initial;
 
             @include device-size(break-md){
                 font-size: 1.3em;
@@ -101,10 +101,10 @@ button:focus, button:active {
         }
 
         a {
-            background-color: $main-color;
+            background-color: map-get($map:$webColors,$key:'main-color');
             border-radius: $button-border-radius;
             padding: 12px 10px;
-            color: $white;
+            color: map-get($map:$webColors,$key:'white');
             text-transform: uppercase;
             font-size: 0.8em;
             font-weight: 600;
@@ -116,8 +116,8 @@ button:focus, button:active {
             &:focus,
             &:active {
                 background: transparent;
-                border: 1px solid $main-color;
-                color: $main-color;
+                border: 1px solid map-get($map:$webColors,$key:'main-color');
+                color: map-get($map:$webColors,$key:'main-color');
             }
 
             @include device-size(break-md){
@@ -150,14 +150,14 @@ button:focus, button:active {
         h2 {
             font-size: 1.8rem;
             text-transform: uppercase;
-            color: $main-color;
+            color: map-get($map:$webColors,$key:'main-color');
             font-weight: 900;
             margin-bottom: 20px;
         }
 
         p {
             font-size: 1.1rem;
-            color: $main-color;
+            color: map-get($map:$webColors,$key:'main-color');
             line-height: 2rem;
         }
 
@@ -188,12 +188,12 @@ button:focus, button:active {
 /* HOME FAVORITES */
 .section__favorites {
     padding: 40px 0px;
-    background-color: $light-gray;
+    background-color: map-get($map:$webColors,$key:'light-gray');
 
     h2 {
         font-size: 1.8em;
         text-transform: uppercase;
-        color: $main-color;
+        color: map-get($map:$webColors,$key:'main-color');
         font-weight: 900;
         margin-bottom: 20px;
 
@@ -204,7 +204,7 @@ button:focus, button:active {
 
     h3 {
         font-size: 1.2em;
-        color: $main-color;
+        color: map-get($map:$webColors,$key:'main-color');
         line-height: 2rem;
         font-weight: 400;
 
@@ -228,13 +228,13 @@ button:focus, button:active {
             }
 
             h4 {
-                color: $main-color;
+                color: map-get($map:$webColors,$key:'main-color');
                 font-size: 1.1rem;
                 margin: 15px 0px;
             }
 
             p {
-                color: $main-color;
+                color: map-get($map:$webColors,$key:'main-color');
                 font-size: 0.9rem;
             }
 
@@ -259,7 +259,7 @@ button:focus, button:active {
 
     h3 {
         font-size: 1rem;
-        color: $main-color;
+        color: map-get($map:$webColors,$key:'main-color');
         font-weight: 400;
         @include text-alignment(center);
 
@@ -276,14 +276,14 @@ button:focus, button:active {
 
             h4 {
                 font-size: 1.5rem;
-                color: $main-color;
+                color: map-get($map:$webColors,$key:'main-color');
                 font-weight: 700;
                 letter-spacing: 5px;
                 margin-bottom: 10px;
             }
 
             h5 {
-                color: $main-color;
+                color: map-get($map:$webColors,$key:'main-color');
                 font-size: 1.1rem;
                 font-weight: 400;
                 margin-bottom: 20px;
@@ -292,7 +292,7 @@ button:focus, button:active {
 
             p {
                 margin-bottom: 10px;
-                color: $main-color;
+                color: map-get($map:$webColors,$key:'main-color');
             }
 
             @include device-size(break-md){
@@ -326,7 +326,7 @@ button:focus, button:active {
         @include text-alignment(center);
         font-size: 1.8rem;
         text-transform: uppercase;
-        color: $main-color;
+        color: map-get($map:$webColors,$key:'main-color');
         font-weight: 900;
         margin-bottom: 20px;
 
@@ -358,7 +358,7 @@ button:focus, button:active {
         @include text-alignment(center);
         font-size: 1.5rem;
         text-transform: uppercase;
-        color: $main-color;
+        color: map-get($map:$webColors,$key:'main-color');
         font-weight: 900;
         margin-bottom: 20px;
 
@@ -370,7 +370,7 @@ button:focus, button:active {
     h3 {
         @include text-alignment(center);
         font-size: 1rem;
-        color: $main-color;
+        color: map-get($map:$webColors,$key:'main-color');
         font-weight: 400;
         margin-bottom: 20px;
 
@@ -380,12 +380,12 @@ button:focus, button:active {
     }
 
     a {
-        background-color: $main-color;
+        background-color: map-get($map:$webColors,$key:'main-color');
         border-radius: $button-border-radius;
         padding: 12px 20px;
-        color: $white;
+        color: map-get($map:$webColors,$key:'white');
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 0.85em;
         font-weight: 600;
         display: inline-block;
 
@@ -393,8 +393,8 @@ button:focus, button:active {
         &:focus,
         &:active {
             background: transparent;
-            border: 1px solid $main-color;
-            color: $main-color;
+            border: 1px solid map-get($map:$webColors,$key:'main-color');
+            color: map-get($map:$webColors,$key:'main-color');
         }
     }
 
@@ -424,7 +424,7 @@ button:focus, button:active {
     h1 {
         font-size: 1.8rem;
         text-transform: uppercase;
-        color: $main-color;
+        color: map-get($map:$webColors,$key:'main-color');
         font-weight: 900;
         margin-bottom: 20px;
         @include text-alignment(center);
@@ -436,7 +436,7 @@ button:focus, button:active {
 
     h2 {
         font-size: 1rem;
-        color: $main-color;
+        color: map-get($map:$webColors,$key:'main-color');
         line-height: 1.7rem;
         font-weight: 400;
         @include text-alignment(center);
@@ -453,14 +453,14 @@ button:focus, button:active {
         margin-top: 50px;
 
         h3 {
-            color: $white;
+            color: map-get($map:$webColors,$key:'white');
             text-transform: uppercase;
             letter-spacing: 4px;
             font-size: 1rem;
             font-weight: 900;
             margin-bottom: 20px;
             padding: 15px;
-            background: $main-color;
+            background: map-get($map:$webColors,$key:'main-color');
             border-radius: 6px;
         }
 
@@ -482,7 +482,7 @@ button:focus, button:active {
             @include device-size(break-xs){
                 font-size: 1em;
                 text-transform: uppercase;
-                color: $main-color;
+                color: map-get($map:$webColors,$key:'main-color');
                 padding-bottom: 15px;
                 width: 100%;
                 max-width: 100%;
@@ -494,7 +494,7 @@ button:focus, button:active {
 
         div:first-of-type {
             @include device-size(break-xs){
-                color: $main-color;
+                color: map-get($map:$webColors,$key:'main-color');
                 font-size: 1em;
                 font-weight: 700;
             }
@@ -505,7 +505,7 @@ button:focus, button:active {
         margin-bottom: 25px; 
 
         div {
-            color: $gray;
+            color: map-get($map:$webColors,$key:'gray');
             font-size: 1em;
             margin-bottom: 5px;
 
@@ -515,7 +515,7 @@ button:focus, button:active {
                 @include text-alignment(left);
                 border-left: none;
                 padding: 10px 15px;
-                color: $gray;
+                color: map-get($map:$webColors,$key:'gray');
                 font-size: 0.8em;
                 min-height: 45px;
                 display: flex;
@@ -525,7 +525,7 @@ button:focus, button:active {
         }
 
         div:first-of-type {
-            color: $main-color;
+            color: map-get($map:$webColors,$key:'main-color');
             font-size: 1.1em;
             font-weight: 700;
 
@@ -541,7 +541,7 @@ button:focus, button:active {
             justify-content: space-between;
             align-items: center;
             @include text-alignment(left);
-            border-bottom: 1px dotted $gray;
+            border-bottom: 1px dotted map-get($map:$webColors,$key:'gray');
             margin-bottom: 0;
         }
     }
@@ -575,7 +575,7 @@ button:focus, button:active {
         h1 {
             font-size: 1.8em;
             text-transform: uppercase;
-            color: $main-color;
+            color: map-get($map:$webColors,$key:'main-color');
             font-weight: 900;
             margin-bottom: 20px;
 
@@ -586,14 +586,14 @@ button:focus, button:active {
 
         h2 {
             font-size: 1.3rem;
-            color: $main-color;
+            color: map-get($map:$webColors,$key:'main-color');
             font-weight: 700;
             margin-bottom: 20px;
         }
 
         p {
             font-size: 1.1rem;
-            color: $main-color;
+            color: map-get($map:$webColors,$key:'main-color');
             line-height: 2rem;
         }
 
@@ -631,7 +631,7 @@ button:focus, button:active {
     h1 {
         font-size: 1.8rem;
         text-transform: uppercase;
-        color: $main-color;
+        color: map-get($map:$webColors,$key:'main-color');
         font-weight: 900;
         margin-bottom: 20px;
         @include text-alignment(center);
@@ -643,7 +643,7 @@ button:focus, button:active {
 
     h2 {
         font-size: 1.2rem;
-        color: $main-color;
+        color: map-get($map:$webColors,$key:'main-color');
         line-height: 2rem;
         font-weight: 400;
         @include text-alignment(center);
@@ -668,7 +668,7 @@ button:focus, button:active {
     h1 {
         font-size: 1.8em;
         text-transform: uppercase;
-        color: $main-color;
+        color: map-get($map:$webColors,$key:'main-color');
         font-weight: 900;
         margin-bottom: 20px;
         @include text-alignment(center);
@@ -680,7 +680,7 @@ button:focus, button:active {
 
     h2 {
         font-size: 1em;
-        color: $main-color;
+        color: map-get($map:$webColors,$key:'main-color');
         line-height: 1.7em;
         font-weight: 400;
         @include text-alignment(center);
@@ -705,8 +705,8 @@ button:focus, button:active {
             height: 36px;
             padding: 0px 10px;
             border-radius: 4px;
-            border: 1px solid $main-color;
-            color: $main-color;
+            border: 1px solid map-get($map:$webColors,$key:'main-color');
+            color: map-get($map:$webColors,$key:'main-color');
             font-size: 0.8rem;
 
             &:focus,
@@ -721,8 +721,8 @@ button:focus, button:active {
             margin-bottom: 15px;
             padding: 10px 10px;
             border-radius: 4px;
-            border: 1px solid $main-color;
-            color: $main-color;
+            border: 1px solid map-get($map:$webColors,$key:'main-color');
+            color: map-get($map:$webColors,$key:'main-color');
             font-size: 0.8rem;
             resize: none;
 
@@ -736,19 +736,19 @@ button:focus, button:active {
             width: auto;
             display: inline-block;
             vertical-align: middle;
-            accent-color: $main-color;
+            accent-color: map-get($map:$webColors,$key:'main-color');
         }
 
         input[type="submit"] {
             display: inline-block;
             max-width: 100px;
             width: 100%;
-            background: $main-color;
-            color: $white;
+            background: map-get($map:$webColors,$key:'main-color');
+            color: map-get($map:$webColors,$key:'white');
             text-transform: uppercase;
             font-weight: 700;
             letter-spacing: 1px;
-            border: 1px solid $main-color;
+            border: 1px solid map-get($map:$webColors,$key:'main-color');
             margin-left: 15px;
             cursor: pointer;
         }
@@ -758,11 +758,11 @@ button:focus, button:active {
             max-width: 100px;
             width: 100%;
             background: transparent;
-            color: $main-color;
+            color: map-get($map:$webColors,$key:'main-color');
             text-transform: uppercase;
             font-weight: 700;
             letter-spacing: 1px;
-            border: 1px solid $main-color;
+            border: 1px solid map-get($map:$webColors,$key:'main-color');
             margin-left: 15px;
             cursor: pointer;
         }
@@ -772,8 +772,8 @@ button:focus, button:active {
             height: 36px;
             padding: 0px 10px;
             border-radius: $main-border-radius;
-            border: 1px solid $main-color;
-            color: $main-color;
+            border: 1px solid map-get($map:$webColors,$key:'main-color');
+            color: map-get($map:$webColors,$key:'main-color');
             font-size: 0.8rem;
 
             &:focus,
@@ -783,7 +783,7 @@ button:focus, button:active {
         }
 
         label {
-            color: $main-color;
+            color: map-get($map:$webColors,$key:'main-color');
             font-weight: 900;
         }
 
